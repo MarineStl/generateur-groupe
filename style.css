@@ -1,25 +1,42 @@
-
-* {
-    font-family: arial;
+body
+{
+    background-color: rgb(184, 175, 175) ;
 }
+.taille
+{
+    width: 40px;
 
-body {
-    background-color: #3a5da8;
+}
+.police
+{
+    font-family:"Hello Valentina" ;
+    background-color: blueviolet;
     color: white;
+    font-weight: bold;
+}
+@font-face {
+        font-family: "Hello Valentina";
+        src: url("Hello Valentina.ttf");
 }
 
-header {
+.zone_groupe
+{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin-bottom: 20px;
+    flex-direction: row;
+    margin-top: 30px;
+    
+ 
 }
+.groupe
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 30px;
+width: 150px;
 
-h1 {
-    text-shadow: 0 0 5px rgba(0, 0, 0, .3);
-    margin:10px 30px;
 }
-
-a {
-    text-decoration: none;
+.fond
+{
+    background-color: white;
 }
