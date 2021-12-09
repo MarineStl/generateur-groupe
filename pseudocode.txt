@@ -1,0 +1,72 @@
+
+
+VARIABLE tableau Apprenants
+Afficher tableau Apprenants
+
+Quand bouton "Ajouter" cliqué
+	Ajouter valeur champs "Prénom" à variable Apprenants
+	Mettre à jour liste Apprenants
+
+Quand bouton "Supprimer" cliqué
+	Supprimer éléments correspondant du tableau Apprenants
+	Mettre à jour liste Apprenants
+
+
+VARIABLE Nombre_groupes
+
+Quand bouton "Générer" cliqué
+	Fonction pour mélanger aléatoirement TABLEAU Apprenants
+	
+	VARIABLE Nombre_par_groupe = Nombre_Apprenants / Nombre_groupes
+	Arrondir inférieur Nombre_par_groupe
+	
+	VARIABLE Reste_Apprenant = Nombre_Apprenants - (Nombre_par_groupe * Nombre_groupes)
+	
+	
+	
+	Si Reste_Apprenant > 0
+		Boucle For(i = 0; i < Nombre_groupes; i++)
+			Créer variable Groupe[i] = Nombre_par_groupe
+		
+		i = 0
+		
+		Boucle Tant que Reste_Apprenant > 0
+			Groupe[i]++
+			Reste_Apprenant --
+			i++
+		
+	
+	Afficher Groupe[]
+
+
+
+
+(14)
+6 groupes : 3 3 2 2 2 2
+5 groupes : 3 3 3 3 2
+4 groupes : 4 4 3 3
+3 groupes : 5 5 4
+
+
+5 groupes :
+14 / 5 = 2,8 arrondi 2
+2 2 2 2 2 + 2 + 2 (= 14)
+3 3 3 3 2
+
+
+
+
+
+
+
+
+
+diviser tableau
+afficher variable interaction
+creer tableau aleatoire
+
+
+
+
+
+
