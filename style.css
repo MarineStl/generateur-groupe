@@ -40,3 +40,64 @@ width: 150px;
 {
     background-color: white;
 }
+
+
+body, html {
+
+background-color: black;
+color: white;
+text-align: center;
+
+}
+
+
+
+.h1 {
+
+
+text-align: center;
+
+}
+
+.titre2 {
+
+font-size: 25px;
+
+}
+
+
+button {
+
+border-radius: 20px;
+margin-top: 10px;
+
+
+}
+
+
+.prenoms {
+
+list-style: none;   
+background-color: white;
+color: black;
+border-radius: 20px;
+
+}
+
+.liste {
+
+list-style: none;
+
+}
+
+.ajouter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form {
+
+display: flex;
+flex-direction: column;
+}
