@@ -12,40 +12,41 @@
 </head>
 
 <body>
-
     <h1>GÉNÉRATEUR DE GROUPES</h1>
 
 
-    
-    <form method="post" id="register" action="register.html">
+
+    <form method="post" id="ajouter" action="javascript:void(0)" onsubmit="ajouter()">
 
         <label for="prenom">Prénom</label>
-        <input type="text" name="prenom">
+        <input type="text" id="prenom" name="prenom">
 
-        <button type="submit" class="btn">GÉNÉRER AU HASARD</button>
-
+        <button type="submit" class="btn">AJOUTER</button>
     </form>
-<section>
+
+
+    <div id="apprenants"></div>
+
+
+
+    
+    <section>
         <h2>NOMBRES DE GROUPES</h2>
         <input class="taille" type="number" />
         <button class="police"type="submit" class="btn">GÉNÉRER AU HASARD</button>
     </section>
+
     <section class="zone_groupe">
         <div class="groupe">
             <h3>Groupe 1</h3>
             <div class="fond"> stef medhi marine sdhfgs jhflkjdshjds kjfskjdf</div>
-        </div>  
+        </div>
         <div class="groupe"> 
             <h3>Groupe 1</h3>
-            <div class="fond"> stef medhi marine</div>
+            <div class="fond"> stef mehdi marine</div>
         </div>
     </section>
 
 
-
-
-    <script>
-        commencer();
-    </script>
 </body>
 </html>
